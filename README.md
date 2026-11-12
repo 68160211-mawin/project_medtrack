@@ -22,7 +22,7 @@ Native PHP 8 + MySQLi (prepared statements) + MySQL/MariaDB, Bootstrap 5 (CDN), 
 3. คัดลอก `config/db.example.php` เป็น `config/db.php` (ค่าเริ่มต้นของ XAMPP: user root, รหัสผ่านว่าง, db medtrack)
 4. เปิด `http://localhost/medtrack/`
 
-## ข้อมูลตัวอย่าง และ cron (ไม่บังคับ)
+## ข้อมูลตัวอย่าง และ cron 
 
 - `php seed_demo.php` สร้างบัญชี `demo.patient@example.com` (ผู้สูงอายุ) และ `demo.child@example.com` (ลูกหลาน) รหัสผ่าน `demo1234`
 - `php cron.php` ตั้งรันทุก 5 นาทีเพื่อแจ้งเตือนข้ามมื้อทันเวลา ถ้าไม่ตั้ง ระบบตรวจเมื่อมีคนเปิดหน้าเว็บ (รันได้จาก CLI เท่านั้น)
@@ -65,7 +65,7 @@ medtrack/
 - ฟอร์ม POST ทุกอันมี CSRF token
 - ตรวจสิทธิ์ทุกครั้งก่อนดู/แก้ข้อมูลของผู้ป่วย
 
-## ข้อจำกัด (เอาไว้ตอบตอนนำเสนอ)
+## ข้อจำกัด
 
 - เป็นระบบช่วยเตือนเท่านั้น ไม่ให้คำแนะนำเรื่องขนาดยา ข้อมูลยาผู้ใช้กรอกเอง
 - การแจ้งเตือนแสดงบนเว็บ ยังไม่ส่ง LINE/อีเมล (ต่อยอดได้ เช่น LINE Notify หรือ Telegram Bot ใน `mark_missed`)

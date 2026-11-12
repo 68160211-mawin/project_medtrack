@@ -1,0 +1,24 @@
+/* ส่วนเสริมจาก Bootstrap 5: สีธีม และหน้าสำหรับผู้สูงอายุ (ตัวใหญ่ ปุ่มใหญ่) */
+:root { --mt-primary: #0f766e; --mt-primary-dark: #0b5a54; }
+body { background: #f4f7f6; font-family: "Sarabun", "Noto Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif; }
+.mt-nav { background: var(--mt-primary); }
+.btn-mt { background: var(--mt-primary); border-color: var(--mt-primary); color: #fff; }
+.btn-mt:hover { background: var(--mt-primary-dark); border-color: var(--mt-primary-dark); color: #fff; }
+.card { border-radius: 14px; }
+.progress { height: 10px; }
+.progress-bar { background: var(--mt-primary); }
+
+/* หน้าสำหรับผู้สูงอายุ */
+.senior { font-size: 20px; }
+.senior .dose-time { font-size: 1.8rem; font-weight: 700; color: var(--mt-primary); }
+.senior .dose-med { font-size: 1.5rem; font-weight: 600; }
+.senior .btn-huge { width: 100%; padding: 18px; font-size: 1.5rem; border-radius: 14px; }
+.dose.taken { opacity: .75; }
+.dose.missed { border-color: #f5c2c7; background: #fff7f7; }
+
+/* การแจ้งเตือนของผู้ดูแล */
+.alert-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #fde68a; }
+.alert-row.missed { color: #b02a37; }
+.alert-row.low_stock { color: #b45309; }
+.patient-card { text-decoration: none; color: inherit; }
+.patient-card:hover { border-color: var(--mt-primary); }
